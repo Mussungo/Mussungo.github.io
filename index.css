@@ -72,6 +72,7 @@
 .hero-section .prof-picture {
   position: relative;
   width: 20.1rem;
+  width: 29.1rem;
   border: 4px solid var(--dark-navy);
 }
 
