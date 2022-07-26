@@ -1,0 +1,331 @@
+.hero-section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.hero-section .social-media {
+  position: fixed;
+  left: 3.6rem;
+  bottom: 0;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.hero-section .social-media2 {
+  position: fixed;
+  right: 3.6rem;
+  bottom: 0;
+  display: grid;
+  justify-items: center;
+  color: var(--lightest-slate);
+
+  gap: 1rem;
+}
+
+.hero-section .social-media2 p {
+  writing-mode: vertical-rl;
+  font-size: 1.3rem;
+}
+
+.hero-section .social-media .vert-line {
+  border-left: 2px solid var(--lightest-slate);
+  height: 5rem;
+}
+
+.hero-section .social-media2 .vert-line-2 {
+  border-left: 2px solid var(--lightest-slate);
+  height: 5rem;
+}
+
+.hero-section .social-media .links {
+  display: grid;
+  gap: 2rem;
+
+  color: var(--lightest-slate);
+  font-size: 1.2rem;
+}
+
+.hero-section .social-media .links i,
+.hero-section .social-media2 p {
+  color: var(--white);
+}
+
+.hero-section .social-media .links i:hover,
+.hero-section .social-media2 p:hover {
+  color: var(--blue);
+}
+
+.hero-section .content .subtitle {
+  margin-left: 2.12rem;
+  margin-top: 0.5rem;
+}
+
+.hero-section .content .btn {
+  margin-top: 2.9rem;
+  padding: 1rem;
+}
+
+.hero-section .prof-picture {
+  position: relative;
+  width: 20.1rem;
+  border: 4px solid var(--dark-navy);
+}
+
+.hero-section .prof-picture .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-left: 4px solid var(--blue);
+  border-top: 4px solid var(--blue);
+  height: 5rem;
+  width: 5rem;
+}
+
+.hero-section .prof-picture img {
+  padding: 1rem;
+}
+
+.hero-section .prof-picture .bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  border-right: 4px solid var(--blue);
+  border-bottom: 4px solid var(--blue);
+  height: 5rem;
+  width: 5rem;
+}
+
+/*=========================================== ABOUT =====================================================*/
+.hero-section .about {
+  display: grid;
+}
+
+.hero-section .about .subtitle {
+  margin-top: 1rem;
+}
+
+.hero-section .skills {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-section .skills .areas {
+  display: grid;
+  gap: 1.5rem;
+  width: 20%;
+}
+
+.hero-section .skills .areas p {
+  display: grid;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0 1rem;
+
+  font-weight: bold;
+}
+
+.hero-section .skills .areas p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: var(--blue);
+  width: 5px;
+  height: 100%;
+}
+
+.hero-section .skills .areas p:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.hero-section .skills .areas p.selected {
+  color: var(--blue);
+}
+
+.hero-section .skills .skills-wrapper {
+  width: 80%;
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-section .skills .skills-wrapper .skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section .skills .skills-wrapper .skill .skill-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+
+  background: var(--lightest-navy);
+}
+
+.hero-section .skills .skills-wrapper .skill .skill-info span {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line {
+  display: flex;
+  align-items: flex-start;
+  background: var(--slate);
+  width: 80%;
+  height: 2.5rem;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line .bar-value {
+  color: var(--white);
+  padding: 0 1rem;
+  opacity: 0;
+  transition: 2s opacity;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line span.test {
+  position: relative;
+  height: 100%;
+  width: 80%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: var(--light-blue);
+
+  box-shadow: inset 0 0 2px #000;
+  animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line.html span {
+  width: 95%;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line.css span {
+  width: 95%;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line.js span {
+  width: 80%;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line.react span {
+  width: 80%;
+}
+
+.hero-section .skills .skills-wrapper .skill .progress-line.figma span {
+  width: 90%;
+}
+
+/*=========================================== WORK =====================================================*/
+.hero-section .work .cards .languages {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.hero-section .work .cards .languages ul {
+  color: var(--lightest-slate);
+  font-size: var(--title-font-size);
+}
+
+.hero-section .work .cards .languages ul li.selected {
+  background: var(--light-navy);
+}
+
+.hero-section .work .cards .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+
+  border-top: 0.5rem solid var(--blue);
+}
+
+.work .cards .cards-wrapper .card {
+  background: var(--light-navy);
+
+  transition: 1s background;
+}
+
+.work .cards .cards-wrapper .card:hover {
+  background: var(--light-blue-tint);
+  cursor: pointer;
+}
+
+.work .cards .cards-wrapper .card .image {
+  width: 24.5rem;
+  height: 22rem;
+}
+
+/*=========================================== Contact Me =====================================================*/
+.hero-section .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section .contact h1,
+.hero-section .contact p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-section .contact form {
+  width: 50%;
+
+  display: grid;
+  justify-items: center;
+}
+
+.hero-section .contact form .data {
+  display: grid;
+  width: 100%;
+}
+
+.hero-section .contact form input,
+.hero-section .contact textarea {
+  background: none;
+  border: 1px solid var(--navy);
+  padding: 1rem;
+
+  color: var(--white);
+  background: var(--light-navy);
+}
+
+.hero-section .contact form input::placeholder,
+.hero-section .contact textarea::placeholder {
+  color: var(--lightest-slate);
+}
+
+.hero-section .contact form .btn {
+  margin: 2rem;
+  width: 14rem;
+}
+
+/*=========================================== Contact Me =====================================================*/
+
+.hero-section .bottom {
+  text-align: center;
+}
+
+.hero-section .bottom span {
+  padding: 1rem;
+}
+
+/*============================================================================================================*/
