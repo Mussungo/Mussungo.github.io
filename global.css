@@ -29,6 +29,12 @@
   --yellow-tint: #ffdb582d;
   --light-yellow: #564a20;
 
+  --linear-gradient: linear-gradient(
+    89.81deg,
+    #9845e8 -1.72%,
+    #33d2ff 54.05%,
+    #dd5789 99.78%
+  );
   --title-font-size: 1.5rem;
   --subtitle-font-size: 1.2rem;
   --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
@@ -154,9 +160,19 @@ nav {
 }
 
 .title {
-  color: var(--white);
+  color: var(--linear-gradient);
   font-size: 3rem;
   font-size: clamp(40px, 8vw, 80px);
+
+  background: linear-gradient(
+    89.81deg,
+    #9845e8 -1.72%,
+    #33d2ff 54.05%,
+    #dd5789 99.78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .subtitle {
