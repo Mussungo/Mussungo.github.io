@@ -52,6 +52,7 @@ html.sr .load-hidden {
 
 body {
   background: var(--navy);
+  background: #111827;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -115,50 +116,67 @@ nav {
   border-bottom: 3px solid var(--dark-navy2);
 }
 
+/*===============================================================*/
+
+.btn-grad {
+  background-image: var(--linear-gradient);
+  width: 15rem;
+  padding: 0.7rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--white);
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn {
-  width: 14rem;
+  width: 15rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  border-radius: 2px;
-  padding: 0.7rem;
-  font-size: 1.2rem;
-
-  background: var(--light-navy);
-  color: var(--blue);
-  border: 1px solid var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+  outline: 2px solid var(--blue);
+  transition: color 1s;
+  margin-top: 2rem;
+  border-radius: 0.1rem;
 }
 
-.btn.a {
-  width: 14rem;
-  text-align: center;
-  border-radius: 2px;
-  padding: 0.7rem;
-  font-size: 1.2rem;
-
-  background: var(--light-navy);
-  color: var(--azul3);
-  border: 1px solid var(--azul3);
+.btn:hover {
+  color: var(--navy);
 }
 
-.btn.a:hover {
-  background: var(--azul3-tint);
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--blue);
+  transform: skewX(50deg);
+  z-index: -1;
+  transition: width 1s;
 }
 
-.btn-small {
-  width: 7rem;
-  text-align: center;
-  padding: 0.7rem;
-
-  background: var(--light-navy);
-  color: var(--blue);
-  border: 1px solid var(--blue);
+.btn:hover::before {
+  width: 150%;
 }
 
-.btn:hover,
-.btn-small:hover {
-  background: var(--blue-tint);
-  cursor: pointer;
-}
-
+/*===============================================================*/
 .title {
   color: var(--linear-gradient);
   font-size: 3rem;
