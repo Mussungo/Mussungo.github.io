@@ -179,7 +179,6 @@ nav {
 /*===============================================================*/
 .title {
   color: var(--linear-gradient);
-  font-size: 3rem;
   font-size: clamp(40px, 8vw, 80px);
 
   background: linear-gradient(
@@ -200,7 +199,9 @@ nav {
 
 .container {
   min-height: 100vh;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
   padding: 5rem;
+
+  /*outline: 2px solid red;*/
 }
